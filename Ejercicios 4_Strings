@@ -1,1 +1,22 @@
 #Nivel 1: Operaciones básicas
+texto = "Programación Para Todos"
+print(texto)
+print(len(texto))
+
+#Nivel 2: Transformación de texto
+print(texto.upper())
+print(texto.lower())
+print(texto.title())
+print(texto.capitalize())
+
+#Nivel 3: Búsqueda y verificación
+print(texto.startswith("Programación"))
+print(texto.endswith("Todos"))
+print(texto.find("Para"))
+print("Python" in texto)
+
+#Nivel 4: Manipulación 
+print(texto.replace("Programación", "Python"))
+print(texto.split())
+print("-".join(texto.split()))
+
