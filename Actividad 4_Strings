@@ -1,0 +1,40 @@
+"""print('dias\tTemas\tEjercicios') # agrega tabulacion (espacio tipo tabla)
+print('Dia 1\t5\t5')
+print('Dia 2\t5\t5')
+print('Dia 3\t5\t5')
+print('Dia 4\t5\t5')"""
+
+from os import name
+
+
+"""nombre = "Matias"
+a,b,c,d,e,f = nombre # enpacking sequence characters into variables
+print(a) # M
+print(b) # a        
+print(c) # t
+print(d) # i
+print(e) # a
+print(f) # s"""
+
+nombre = "matias"
+first_letter = nombre[0]
+print(first_letter)  # m
+second_letter = nombre[1]
+print(second_letter)  # a
+third_letter = nombre[2]
+print(third_letter)  # t
+fourth_letter = nombre[3]
+print(fourth_letter)  # i
+fiveth_letter = nombre[4]
+print(fiveth_letter)  # a
+sixth_letter = nombre[5]
+print(sixth_letter)  # s
+last_index = len(nombre) - 1
+last_letter = nombre[last_index]
+print(last_letter)  # s
+print(nombre[0:2])  # ma
+print(nombre[-1])  # s
+print(nombre[-3])  # t
+print(nombre[-3:])  # ias
+print(nombre[::2])    # ma
+print(nombre[::-1])  # saitam
