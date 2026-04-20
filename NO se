@@ -1,0 +1,104 @@
+# ===== PARTE A =====
+# 1. Analisis de datos y codigo
+
+# a) Indica el tipo de cada variable)
+# Respuesta: 
+#nombre: str
+#edad: int
+#promedio: float
+#cursos: list
+#print(type(nombre)): str
+#print(type(edad)): int
+#print(type(promedio)): float
+#print(type(cursos)): list
+#print(len(nombre)): 6
+
+# b) Indica qué mostraría el programa en pantalla.
+# Respuesta:
+#Matias
+#15
+#9.75
+#python, java
+
+# c)Explica qué hace len(nombre)
+# Respuesta: 
+# len(nombre) devuelve la cantidad de caracteres que tiene la variable nombre.
+
+# ===== PARTE B =====
+# 2. Comprensión conceptual
+#Parte A
+
+# a) ¿Qué diferencia hay entre print() e input()?
+#Respuesta:
+# print se utiliza para mostrar la informacion en la pantalla, por otro lado input se utiliza para recibir informacion del usuario.
+
+# b) ¿Por qué un dato ingresado con input() puede dar error si se usa directamente en un cálculo?
+#Respuesta:
+# Porque el dato ingresado con input() es de tipo string, por lo tanto si se intenta realizar un calculo con ese dato se producira un error.
+
+# c) Explica la diferencia entre /, // y %.
+#Respuesta:
+# / es la division normal, // es la division entera y % es el modulo.
+
+# d) Escribe una instrucción que permita comprobar la versión de Python que se está usando.
+#Respuesta:
+#print(sys.version)
+
+# e) Escribe una instrucción que permita consultar las palabras reservadas de Python.
+#Respuesta:
+#print(keyword.kwlist)
+
+# 3. Corrección de código
+
+#Respuesta:
+ancho = float(input("Ingrese el ancho del terreno: "))
+largo = float(input("Ingrese el largo del terreno: "))
+precio = float(input("Ingrese el precio por metro cuadrado: "))
+area = ancho * largo
+costo = area * precio
+print("Área total: " + str(area))
+print("Costo estimado: " + str(costo))
+
+# a) ¿Cuáles eran los errores principales?
+#Respuesta:
+# Los errores principales era la falta del dato float en las variables ancho, largo y precio y la falta de convertir a string las variables area y costo en el print.
+
+# b) ¿Por qué tu corrección sí permite obtener resultados válidos?
+#Respuesta:
+# Porque al convertir a float las variables ancho, largo y precio se pueden realizar los calculos necesarios para obtener el area y el costo, y al convertir a string las variables area y costo se pueden mostrar en pantalla sin producir un error.
+
+# 4. Construcción breve
+
+#Respuesta:
+frase = "Tecnología para todos"
+print(frase.upper())
+print(len(frase))
+print("Python" in frase)
+print(frase.replace("Tecnología", "Programación"))
+print(frase.split())
+
+# ===== PARTE C =====
+# 5. Desarrolla un programa 
+
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+pais = input("Ingrese su país: ")
+ancho = float(input("Ingrese el ancho de la pared: "))
+alto = float(input("Ingrese el alto de la pared: "))
+precio = float(input("Ingrese el precio por metro cuadrado: ")) 
+area = ancho * alto
+costo = area * precio
+costo_total = costo * 2
+
+nombre_completo = nombre + " " + apellido
+print(f"Nombre completo: {nombre_completo}")
+print(f"País: {pais}")
+print(f"Área calculada: {area} metros cuadrados")
+print(f"Costo total: {costo_total} dolares")
+
+print(nombre_completo.upper())
+print(f"Longitud del nombre completo: {len(nombre_completo)} caracteres")
+if "a" in nombre_completo:
+    print("La letra 'a' está presente en el nombre completo.")
+if costo_total > 100:
+    print("El costo total es mayor que 100 dólares.")
