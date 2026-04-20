@@ -20,3 +20,17 @@ print(texto.replace("Programación", "Python"))
 print(texto.split())
 print("-".join(texto.split()))
 
+#Nivel 5: Índices
+print(texto[0])
+print(texto[-1])
+print(texto[5])
+
+#Nivel 6: Aplicación simple
+nombre = "Matias Sghirla"
+print("Hola mi nombre es ()".format(nombre))
+partes = nombre.split()
+iniciales = partes[0][0] + partes[1][0]
+print(iniciales)
+
+
+
