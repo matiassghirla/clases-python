@@ -1,0 +1,37 @@
+nombre = input("Ingrese su nombre: ")
+edad = int(input("Ingrese su edad: "))
+puntaje = float(input("Ingrese su promedio: "))
+asistencia = str(input("Ingrese su asistencia: "))
+codigo_asistencia = input("Ingrese el codigo de asistencia: ")
+nombre = nombre.upper()
+caracteres = len(nombre.replace(" ", ""))
+promedio = (puntaje + float(asistencia)) / 2
+
+if edad >= 14:
+    if promedio >= 80:
+        if codigo_asistencia == "PYTHON2026":
+            resultado = "Acceso VIP"
+        else:
+            resultado = "Acceso General"
+    elif promedio >= 60:
+        resultado = "Acceso con observaacion"
+    else:
+        resultado = "No puedo ingreasar por bajo rendimiento"
+else:
+    if codigo_asistencia == "PYTHON2026":
+        resultado = "Acceso especial con acompañante"
+    else:
+        resultado = "No cumple la edad minima" 
+
+if puntaje >= 90 and asistencia >= 90:
+    mensaje = "Candidato destacado"
+elif puntaje >= 50 or asistencia >= 50:  
+    mensaje = "Requiere refuerzo previo"
+else:
+    mensaje = "Sin observaciones"
+
+print(f"Participante: {nombre.upper()}")
+print(f"Caracteres del nombre: {caracteres}")
+print(f"Promedio general: {promedio}")
+print(f"Resultado: {resultado}")
+print(f"Mensaje adicional: {mensaje}")
