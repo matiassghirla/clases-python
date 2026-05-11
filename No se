@@ -1,0 +1,8 @@
+limite = int(input("Ingrese un número entero positivo: ")) 
+n = 1 
+while n <= limite:  
+    if n % 5 == 0:       
+        n += 1           
+        continue     
+    print(n) 
+n += 1 

@@ -1,0 +1,58 @@
+"""VariableControl = 0
+while VariableControl < 5:
+    print(VariableControl)
+    VariableControl = VariableControl + 1
+else:
+    print(f"se dieron {VariableControl} repeticiones y finaliza el ciclo")
+
+clave = ""
+while clave != "python":
+    clave = input("ingrese la clave: ")
+    print("Acceso permitido")
+    print("Acceso denegado")
+
+clave = input("ingrese la clave: ")
+while clave != "python":
+    clave = input("Clave incorrecta. Ingrese nuevamante: ")
+    print("Acceso permitido")
+
+
+opcion = ""
+while opcion != "3":
+    print("===MENU===")
+    print("1. Saludar")
+    print("2. Mostrar mensaje")
+    print("3. Salir")
+    opcion = input("Seleccione una opcion: ")
+    if opcion == "1":
+        print("Hola, bienvenido!")
+    elif opcion == "2":
+        print("Estamos aprendiendo ciclos While")
+    elif opcion == "3":
+        print("Salimos del progreso")
+    else:
+        print("Opción no válida")
+    
+
+count= 0
+while count < 5:
+        print(count)
+        count = count
+        if count == 3:
+            break
+print("El ciclo se detuvo")"""
+
+
+clave_correcta = Python123
+while intentos < 3:
+    clave = input("Ingrese la contraseña: ")
+
+    if clave == clave_correcta:
+        print("Acceso permitido")
+        break 
+
+    intentos = intentos + 1
+    print("Contraseña incorrecta")
+
+
+
