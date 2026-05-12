@@ -1,0 +1,96 @@
+#Ejericio 1: LISTAS
+
+notas = [8.5, 6.0, 9.0, 7.0, 5.5]
+
+suma = 0
+aprobados = 0
+reprobados = 0
+
+for nota in notas:
+    suma += nota
+
+    if nota >= 7:
+        aprobados += 1
+    else:
+        reprobados += 1
+
+promedio = suma / len(notas)
+
+print("Suma total:", suma)
+print("Promedio:", promedio)
+print("Aprobados:", aprobados)
+print("Reprobados:", reprobados)
+
+#Ejercicio 2: STRING
+
+contrasena = "Python2026"
+
+letras = 0
+numeros = 0
+cantidad_o = 0
+
+for caracter in contrasena:
+
+    if caracter.isalpha():
+        letras += 1
+
+    if caracter.isdigit():
+        numeros += 1
+
+    if caracter == "o":
+        cantidad_o += 1
+
+print("Cantidad de letras:", letras)
+print("Cantidad de números:", numeros)
+print("Cantidad de o:", cantidad_o)
+
+#Ejercico 3: Con SET
+
+productos = {"teclado", "mouse", "monitor", "mouse", "impresora"}
+
+cantidad = 0
+mas_6 = 0
+
+for producto in productos:
+    cantidad += 1
+
+    letras = 0
+
+    for letra in producto:
+        letras += 1
+
+    if letras > 6:
+        mas_6 += 1
+
+print("Productos únicos:", cantidad)
+print("Productos con más de 6 letras:", mas_6)
+
+#Ejercico 4: Con BREAK
+
+correo = input("Ingrese su correo: ")
+
+usuario = ""
+
+for caracter in correo:
+
+    if caracter == "@":
+        break
+
+    usuario += caracter
+
+print("Usuario:", usuario)
+
+#Ejercicio 5: Con CONTINUE
+
+telefono = input("Ingrese su teléfono: ")
+
+limpio = ""
+
+for caracter in telefono:
+
+    if caracter == " " or caracter == "-":
+        continue
+
+    limpio += caracter
+
+print("Teléfono limpio:", limpio)
