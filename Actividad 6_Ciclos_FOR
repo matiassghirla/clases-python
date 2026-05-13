@@ -1,0 +1,44 @@
+"""numbers = [0, 1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
+
+
+notas = [8, 7, 9, 10, 6]
+suma = 0
+for nota in notas:
+    suma = suma + nota
+promedio = suma / len(notas)
+print("El promedio es:", promedio)
+
+
+language = input("Ingrese su nombre: ")
+for letter in language:
+    print(letter)
+
+
+palabra = input("Ingrese una palabra: ")
+vocales = 0
+
+for letra in palabra:
+    if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+        vocales = vocales + 1
+
+        print("La cantidad de vocales es:", vocales)
+
+
+it_companies = {"Facebook", "Google", "Apple", "Facebook", "Amazon"}
+for company in it_companies:
+    print(company)
+
+
+asistentes = {"Ana", "Luis", "Maria", "Ana", "Carlos", "Luis", "Sofia"}
+for estudiantes in asistentes:
+    print("Generar certificado para:", estudiantes)"""
+
+
+numbers = [0, 1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+    
