@@ -93,4 +93,8 @@ for caracter in telefono:
 
     limpio += caracter
 
+<<<<<<< HEAD
 print("Teléfono limpio:", limpio)
+=======
+print("Teléfono limpio:", limpio)
+>>>>>>> d4d66d563ce4892601c4519c6de2d8b13ac8f3ef

@@ -20,3 +20,7 @@ print(type("Mi nombre es Matias"))
 print(type("Mi apellido es Sghirla"))
 print(type("Mi país es Ecuador"))
 
+print(type(['Asabeneh', 'Python', 'Finland']))
+print(type("Mi nombre es Matias"))
+print(type("Mi apellido es Sghirla"))
+print(type("Mi país es Ecuador"))
