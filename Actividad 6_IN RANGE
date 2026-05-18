@@ -1,0 +1,11 @@
+suma = 0
+notas = float(input("Ingrese la cantidad de notas: "))
+for number in range(int(notas)):
+    nota = float(input(f"Ingerese una nota {number + 1}: "))
+    suma += nota
+promedio = suma / notas
+print("El promedio es:", promedio)
+
+
+
+
