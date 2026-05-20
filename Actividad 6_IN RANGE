@@ -1,3 +1,4 @@
+#Nivel 1:
 suma = 0
 notas = float(input("Ingrese la cantidad de notas: "))
 for number in range(int(notas)):
@@ -5,6 +6,52 @@ for number in range(int(notas)):
     suma += nota
 promedio = suma / notas
 print("El promedio es:", promedio)
+
+
+#Nivel 2:
+
+numero = int(input("Ingrese un numero: "))
+inicio = int(input("Ingrese el inicio: "))
+fin = int(input("Ingrese el fin: "))
+for i in range(inicio, fin + 1):
+    print(f"{numero} x {i} es: {numero * i}")
+
+notas = [5, 8, 8, 8, 10]
+suma = 0
+for i in range (1, 4):
+    suma = suma + notas [i]
+promedio = suma / 3
+print(promedio)
+
+
+#Nivel 3:
+
+Caso A (Incremento)
+
+numero = int(input("Ingrese un numero: "))
+for i in range(2, 11, 2):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
+
+estudiantes = ["Ana", "Luis", "María", "Carlos", "Sofía", "Mateo"]
+for i in range (0, 6, 2):
+    print(f"{estudiantes [i]} y {estudiantes [i + 1]}")
+
+
+#FOR Anidado
+
+for fila in range(1, 4):
+
+    for computadora in range(1, 5):
+
+        nombre = input("Ingrese el nombre del estudiante: ")
+
+        print(nombre, "asignado a Fila", fila,
+              "- Computadora", computadora)
+
+    print("Fin de la fila", fila)
+
+
 
 
 
