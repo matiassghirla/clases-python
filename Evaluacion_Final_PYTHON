@@ -1,6 +1,6 @@
-#Parte C: Desarrollo del programa 
+# Parte C: Desarrollo del programa
 
-#Sistema de habilitación para el reto final de Python
+# Sistema de habilitación para el reto final de Python
 
 # Validación de clave
 
@@ -13,6 +13,7 @@ while clave != clave_correcta:
 print("Bienvenido al sistema")
 
 # Lista de temas
+
 temas = [
     "variables",
     "cálculos",
@@ -20,9 +21,11 @@ temas = [
     "print",
     "f-string",
     "condicionales",
-    "ciclos" ]
+    "ciclos"
+]
 
 print("Temas disponibles:")
+
 for tema in temas:
     print(tema)
 
@@ -34,7 +37,7 @@ cantidad = int(input("¿Cuántos estudiantes serán revisados?: "))
 
 for i in range(cantidad):
 
-print("----------------------")
+    print("----------------------")
     print("Estudiante", i + 1)
 
     nombre = input("Ingrese el nombre: ")
@@ -45,13 +48,13 @@ print("----------------------")
 
     practicas = int(input("Ingrese cantidad de prácticas completadas: "))
 
-# Calcular promedio
+    # Calcular promedio
 
-promedio = (nota_basicos + nota_condicionales + nota_ciclos) / 3
+    promedio = (nota_basicos + nota_condicionales + nota_ciclos) / 3
 
-# Clasificación académica
+    # Clasificación académica
 
-if promedio >= 9:
+    if promedio >= 9:
 
         if practicas >= 5:
             estado = "Habilitado con nivel alto"
@@ -70,7 +73,7 @@ if promedio >= 9:
     else:
         estado = "Requiere refuerzo"
 
-# Reporte final
+    # Reporte final
 
     print("----------------------------")
     print("REPORTE DEL ESTUDIANTE")
