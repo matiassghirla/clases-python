@@ -1,1 +1,54 @@
+def obtener_mensaje(mensaje):
+    return mensaje
+def generar_nombre_completo(nombre,apellido):
+    nombre_completo = nombre + " " + apellido
+    return nombre_completo
+mensaje = str(input("Ingrese el mensaje: "))
+nombre = str(input("Ingrese el nombre: "))
+apellido = str(input("Ingrese el apellido: "))
+print(f"{obtener_mensaje(mensaje)}, {generar_nombre_completo(nombre,apellido)}")
 
+
+#Ejercicio:
+#genere una calcuadora con las 4 operaciones basicas suma, resta, multilplicacion, division, mediante un procedimiento con argumentos para cada operacion, el usuario debe ingresar los dos numeros por teclado y seleccionar la operacion.
+
+def suma(a, b):
+    resultado = a + b
+    return resultado
+    
+def resta(a, b):
+    resultado = a - b
+    return resultado
+    
+def multiplicación(a, b):
+    resultado = a * b
+    return resultado
+    
+def división(a, b):
+    resultado = a / b
+    return resultado
+    
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+print("1. suma")
+print("2. resta")
+print("3. multiplicación")
+print("4. división")
+
+opcion = int(input("Seleccione una opción: "))
+
+if opcion == 1:
+     print("resultado:", suma(num1, num2))
+
+elif opcion == 2:
+    print("resultado", resta(num1, num2))
+    
+elif opcion == 3:
+    print("Resultado:", multiplicacion(num1, num2))
+    
+elif opcion == 4:
+    print("Resultado:", division(num1, num2))
+
+else:
+    print("Opción no válida")
