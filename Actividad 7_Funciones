@@ -52,3 +52,70 @@ elif opcion == 4:
 
 else:
     print("Opción no válida")
+
+
+# Deber
+
+def promedio(n1, n2, n3):
+    resultado = (n1 + n2 + n3) / 3
+    return resultado
+
+def nota_mayor(n1, n2, n3):
+
+    if n1 >= n2 and n1 >= n3:
+        return n1
+
+    elif n2 >= n1 and n2 >= n3:
+        return n2
+
+    else:
+        return n3
+
+def nota_menor(n1, n2, n3):
+
+    if n1 <= n2 and n1 <= n3:
+        return n1
+
+    elif n2 <= n1 and n2 <= n3:
+        return n2
+
+    else:
+        return n3
+
+def estado(prom):
+
+    if prom >= 7:
+        return "Aprueba"
+
+    else:
+        return "Reprueba"
+
+
+# Programa principal
+
+nota1 = float(input("Ingrese la primera nota: "))
+nota2 = float(input("Ingrese la segunda nota: "))
+nota3 = float(input("Ingrese la tercera nota: "))
+
+print("1. Calcular promedio")
+print("2. Mostrar nota mayor")
+print("3. Mostrar nota menor")
+print("4. Determinar si aprueba o reprueba")
+
+opcion = int(input("Seleccione una opción: "))
+
+if opcion == 1:
+    print("Promedio:", promedio(nota1, nota2, nota3))
+
+elif opcion == 2:
+    print("Nota mayor:", nota_mayor(nota1, nota2, nota3))
+
+elif opcion == 3:
+    print("Nota menor:", nota_menor(nota1, nota2, nota3))
+
+elif opcion == 4:
+    prom = promedio(nota1, nota2, nota3)
+    print(estado(prom))
+
+else:
+    print("Opción no válida")
